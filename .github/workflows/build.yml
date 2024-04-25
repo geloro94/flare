@@ -161,9 +161,6 @@ jobs:
   push-image:
     needs:
       - build
-      - integration-test-default-config
-      - integration-test
-      - image-scan
     runs-on: ubuntu-22.04
     if: ${{ ! startsWith(github.head_ref, 'dependabot/')}}
 
