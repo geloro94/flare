@@ -91,7 +91,7 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: |
-            ghcr.io/medizininformatik-initiative/flare
+            ghcr.io/geloro94/flare
           tags: |
             type=schedule
             type=ref,event=branch
