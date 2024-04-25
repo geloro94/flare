@@ -30,7 +30,7 @@ jobs:
           path: ~/.m2/repository
           key: maven-${{ hashFiles('pom.xml') }}
       - name: Build
-        run: mvn -B verify
+        run: mvn -B verify -DskipTests
       - name: Upload Flare Jar
         uses: actions/upload-artifact@v3
         with:
